@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:context="com.example.abosala7.inhalls01.signIn.SignIn">
+
+        <ImageView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logoar"
+            android:text="Sign In"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/name-signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="الإسم" />
+
+        <EditText
+            android:id="@+id/phone-signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="رقم التليفون" />
+
+        <Button
+            android:id="@+id/signin-signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:onClick="click"
+            android:text="تسحيل الدخول"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signup_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:onClick="click"
+            android:text="مستخدم جديد"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/faceb_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:drawableLeft="@drawable/fb40"
+            android:onClick="click"
+            android:text="sign in with facebook"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/google-signin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:drawableLeft="@drawable/google40"
+            android:onClick="click"
+            android:text="sign in with google"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+
+
+    </LinearLayout>
+</ScrollView>
